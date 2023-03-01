@@ -57,7 +57,7 @@ function Details(props) {
 
 
             <Link to={{
-                pathname:'/', 
+                pathname:'/rest-countries', 
                 }}>
                     <div className="back-box">
 
