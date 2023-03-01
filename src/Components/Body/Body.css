@@ -1,0 +1,124 @@
+
+
+body{
+    background-color: var(--body_background);
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: 5%;
+    justify-content: space-between;
+    
+}
+
+.search-box{
+    position: absolute;
+    left:5%;
+}
+
+.continent-box{
+    position: absolute;
+    right: 5%;
+}
+
+
+.input-box{
+    width: 400px;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 5px 35px 7px;
+    font-size: 14px;
+    border-radius: 7px;
+    border: 0px ;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+
+    background-color: var(--background);
+    color:var(--font_color);
+
+}
+
+.select-box{
+    width: 200px;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 5px 35px 7px;
+    font-size: 14px;
+    border-radius: 7px;
+    border: 0px ;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+
+    
+    background-color: var(--background);
+    color:var(--font_color);
+
+}
+
+.icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 12px;
+    top: 18px;
+}
+
+.icon-lens{
+
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    color:var(--font_color);
+
+}
+
+.loading-page{
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color:var(--font_color);
+}
+
+  /* Dispositivos pequeños*/
+  
+  
+  @media screen and (max-width: 680px){
+ 
+    .search-container{
+        flex-direction: column;
+        margin-bottom: 25px;
+        align-items: flex-start;
+    }
+    
+    .search-box{
+        position: static;
+    }
+
+    .continent-box{
+        position: static;
+        margin-top: 5%;
+    }
+
+    .input-box{
+        width: 200px;
+        height: 40px;
+        padding: 5px 20px 7px;
+    }
+
+    .select-box{
+        width: 200px;
+        height: 40px;
+        padding: 5px 20px 7px;
+    }
+
+    .icon-lens{
+        display: none;
+    }
+
+  }
